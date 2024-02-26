@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 80vw;
+}
+
+.panel {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  flex: 0.5;
+  margin: 4px;
+  transition: all 500ms ease-in;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel-cambodia {
+  background-image: url("/001-expanding-cards/assets/cambodia-flag-3d-medium.png");
+}
+
+.panel-china {
+  background-image: url("/001-expanding-cards/assets/china-flag-3d-medium.png");
+}
+
+.panel-france {
+  background-image: url("/001-expanding-cards/assets/france-flag-3d-medium.png");
+}
+
+.panel-germany {
+  background-image: url("/001-expanding-cards/assets/germany-flag-3d-medium.png");
+}
+
+.panel-japan {
+  background-image: url("/001-expanding-cards/assets/japan-flag-3d-medium.png");
+}
+
+.panel-russia {
+  background-image: url("/001-expanding-cards/assets/russia-flag-3d-medium.png");
+}
+
+.panel-south-korea {
+  background-image: url("/001-expanding-cards/assets/south-korea-flag-3d-medium.png");
+}
+
+.panel-spain {
+  background-image: url("/001-expanding-cards/assets/spain-flag-3d-medium.png");
+}
+
+.panel-uk {
+  background-image: url("/001-expanding-cards/assets/united-kingdom-flag-3d-medium.png");
+}
+
+.panel-usa {
+  background-image: url("/001-expanding-cards/assets/united-states-of-america-flag-3d-medium.png");
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+}
